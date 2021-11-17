@@ -14,6 +14,30 @@ body{
   background-color: black;
 }
 
+
+.navbar-container{
+  display: flex;
+  align-items: center;
+  background-color: rgb(195, 119, 5);
+  padding: 0 50px;
+  height: 100%;
+
+}
+
+.logo-container{
+  flex: 1;
+}
+
+.menu-container{
+  flex: 6;
+}
+
+.profile-container{
+  flex: 2;
+}
+
+
+
 .sidebar{
   width: 50px;
   height: 100%;
@@ -22,6 +46,3 @@ body{
   position:fixed;
 }
 
-.navbar-container{
-  
-}
