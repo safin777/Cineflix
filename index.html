@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Cineflix</title>
   </head>
   <body>
@@ -15,15 +15,133 @@
     <div class="navbar">
       <div class="navbar-container">
        <div class="logo-container">
-         <h1>CINEFLIX</h1>
+         <h1 class="logo">CINEFLIX</h1>
        </div>
-       <div class="menu-container">Menu</div>
-       <div class="profile-container">Profile</div>
+       <div class="menu-container">
+         <ul class="menu-list">
+           <li class="menu-list-item active">Home</li>
+           <li class="menu-list-item">Movies</li>
+           <li class="menu-list-item">Series</li>
+           <li class="menu-list-item">Populer</li>
+           <li class="menu-list-item">Trends</li>
+         </ul>
+       </div>
+       <div class="profile-container">
+         <img class="profile-picture" src="img/profile.jpg" alt="" >
+         <div class="profile-text-container">
+           <span class="profile-text">Jhon Doe</span>
+           <i class="fas fa-sort-down"></i>
+         </div>
+         <div class="toggle">
+          <i class="fas fa-moon toggle-icon"></i>
+          <i class="fas fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+         </div>
+       </div>
       </div>
     </div>
 
     <div class="sidebar">
+      <i class="left-menu-icon fas fa-search"></i>
+      <i class="left-menu-icon fas fa-home"></i>
+      <i class="left-menu-icon fas fa-users"></i>
+      <i class="left-menu-icon fas fa-bookmark"></i>
+      <i class="left-menu-icon fas fa-tv"></i>
+      <i class="left-menu-icon fas fa-hourglass"></i>
+      <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
 
+    <div class="container">
+      <div class="content-container">
+        <div class="featured-content" style=" background:linear-gradient(to bottom,rgba(0,0,0,0),#101010),url(img/f-1.jpg);">
+          <img src="img/f-t-1.png" alt="" class="featured-title">
+
+          <p class="featured-desc">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+          </p>
+          <button class="featured-button">WATCH</button>
+        </div>
+
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">NEW RELEASES</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img src="img/1.jpeg" alt="" class="movie-list-item-image">
+                <!-- <span class="movie-list-item-title"></span>
+                <p class="movie-list-item-desc">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <button class="movie-list-item-button">WATCH</button> -->
+              </div>
+
+              <div class="movie-list-item">
+                <img src="img/1.jpeg" alt="" class="movie-list-item-image">
+                <!-- <span class="movie-list-item-title"></span>
+                <p class="movie-list-item-desc">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <button class="movie-list-item-button">WATCH</button> -->
+              </div>
+
+              <div class="movie-list-item">
+                <img src="img/1.jpeg" alt="" class="movie-list-item-image">
+                <!-- <span class="movie-list-item-title"></span>
+                <p class="movie-list-item-desc">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <button class="movie-list-item-button">WATCH</button> -->
+              </div>
+
+              <div class="movie-list-item">
+                <img src="img/1.jpeg" alt="" class="movie-list-item-image">
+                <!-- <span class="movie-list-item-title"></span>
+                <p class="movie-list-item-desc">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <button class="movie-list-item-button">WATCH</button> -->
+              </div>
+
+              <div class="movie-list-item">
+                <img src="img/1.jpeg" alt="" class="movie-list-item-image">
+                <!-- <span class="movie-list-item-title"></span>
+                <p class="movie-list-item-desc">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <button class="movie-list-item-button">WATCH</button> -->
+              </div>
+
+              <div class="movie-list-item">
+                <img src="img/1.jpeg" alt="" class="movie-list-item-image">
+                <!-- <span class="movie-list-item-title"></span>
+                <p class="movie-list-item-desc">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <button class="movie-list-item-button">WATCH</button> -->
+              </div>
+
+              <div class="movie-list-item">
+                <img src="img/1.jpeg" alt="" class="movie-list-item-image">
+                <!-- <span class="movie-list-item-title"></span>
+                <p class="movie-list-item-desc">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <button class="movie-list-item-button">WATCH</button> -->
+              </div>
+
+              <div class="movie-list-item">
+                <img src="img/1.jpeg" alt="" class="movie-list-item-image">
+                <!-- <span class="movie-list-item-title"></span>
+                <p class="movie-list-item-desc">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <button class="movie-list-item-button">WATCH</button> -->
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
