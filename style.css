@@ -124,7 +124,7 @@ body{
 .container{
   background-color: #151515;
   min-height: calc(100vh - 50px);
-  color: white;
+  color:white;
 }
 
 .content-container{
@@ -132,9 +132,10 @@ body{
 }
 
 .featured-content{
-  height: 40vh;
-  padding: 50px;
+  height: 50vh;
+  padding: 60px;
   background-color: #FF2442;
+  
  
 }
 
@@ -168,7 +169,8 @@ margin: 50px 0;
 
 .movie-list-container{
   padding: 0 20px;
-  padding-top: 90px;
+  padding-top: 15px;
+  transition: all 1s ease-in-out;
 }
 
 .movie-list{
@@ -198,6 +200,8 @@ margin: 50px 0;
   opacity: 1;
   
 }
+
+
 
 .movie-list-item-image{
    height: 210px;
@@ -279,4 +283,36 @@ margin: 50px 0;
   opacity: .6;
   cursor: pointer;
 
+}
+
+.container.active{
+  background-color: white;
+}
+
+.movie-list-title.active{
+  color: black;
+}
+
+.navbar-container.active{
+  background-color: white;
+  color: black;
+
+}
+
+.sidebar.active{
+  background-color: white;
+  color: black;
+}
+
+.toggle.active{
+  background-color: black;
+}
+
+.toggle-ball.active{
+  background-color: white;
+  transform: translateX(-22px);
+}
+.movie-list-container.active{
+  background-color: white;
+  transition: all 1s ease-in-out;
 }
