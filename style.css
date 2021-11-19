@@ -167,7 +167,7 @@ margin: 50px 0;
 
 
 .movie-list-container{
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .movie-list{
@@ -261,5 +261,18 @@ margin: 50px 0;
 }
 
 .movie-list-wrapper{
+  position: relative;
+  
+  
+}
+
+.arrow{
+  font-size:120px;
+  color:lightslategray;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  opacity: .6;
+  cursor: pointer;
 
 }
